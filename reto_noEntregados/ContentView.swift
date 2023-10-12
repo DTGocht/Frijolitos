@@ -10,10 +10,14 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
             Text("Hello, world!")
+            List(listaRecibos){
+                x in Recibos_Cobrados_Row_View(recibo: x)
+            }
+            .listStyle(.inset)
+
+
+            Spacer()
         }
         .padding()
     }
