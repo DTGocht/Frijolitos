@@ -9,17 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("Hello, world!")
-            List(listaRecibos){
-                x in Recibos_Cobrados_Row_View(recibo: x)
+            TabView{
+                Recibos_Pendientes_View()
+                    .tabItem{
+                        Label("Pendientes",systemImage: "house.circle")
+                    }
+                Recibos_Cobrados_View()
+                    .tabItem{
+                        Label("Cobrados", systemImage: "doc.richtext.fill")
+                    }
+                Recibos_No_Cobrados_View()
+                    .tabItem{
+                        Label("No cobrados", systemImage: "doc.richtext.fill")
+                    }
+                
             }
-            .listStyle(.inset)
-
-
-            Spacer()
-        }
-        .padding()
+            .tint(Color("PantoneAC"))
+            //sirve para cambiar el background del nav bar
+            /*
+             .onAppear(){
+             UITabBar.appearance().barTintColor = UIColor(Color("PantoneGC"))
+             UITabBar.appearance().backgroundColor = UIColor(Color("PantoneGC"))
+             }
+             */
+             
     }
 }
 
