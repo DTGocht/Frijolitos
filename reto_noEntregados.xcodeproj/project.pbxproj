@@ -18,6 +18,8 @@
 		D6E296F22AD7DE1B005662E9 /* Tarjeta_Nombre_Amarilla.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E296F12AD7DE1B005662E9 /* Tarjeta_Nombre_Amarilla.swift */; };
 		D6E296F42AD8458D005662E9 /* Tarjeta_Nombre_Verde.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E296F32AD8458D005662E9 /* Tarjeta_Nombre_Verde.swift */; };
 		D6E296F82AD84844005662E9 /* Tarjeta_Nombre_Roja.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E296F72AD84844005662E9 /* Tarjeta_Nombre_Roja.swift */; };
+		FBA586222AD8C72400AE0583 /* Recibos_Pendientes_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA586212AD8C72400AE0583 /* Recibos_Pendientes_View.swift */; };
+		FBF749C02AD8D74800644F5A /* Recibos_No_Cobrados_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF749BF2AD8D74800644F5A /* Recibos_No_Cobrados_View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		D6E296F12AD7DE1B005662E9 /* Tarjeta_Nombre_Amarilla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tarjeta_Nombre_Amarilla.swift; sourceTree = "<group>"; };
 		D6E296F32AD8458D005662E9 /* Tarjeta_Nombre_Verde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tarjeta_Nombre_Verde.swift; sourceTree = "<group>"; };
 		D6E296F72AD84844005662E9 /* Tarjeta_Nombre_Roja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tarjeta_Nombre_Roja.swift; sourceTree = "<group>"; };
+		FBA586212AD8C72400AE0583 /* Recibos_Pendientes_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recibos_Pendientes_View.swift; sourceTree = "<group>"; };
+		FBF749BF2AD8D74800644F5A /* Recibos_No_Cobrados_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recibos_No_Cobrados_View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +69,9 @@
 		D6E296D62AD7BEB6005662E9 /* reto_noEntregados */ = {
 			isa = PBXGroup;
 			children = (
+				FBA586232AD8C73E00AE0583 /* Views */,
 				D6E296D72AD7BEB6005662E9 /* reto_noEntregadosApp.swift */,
 				D6E296D92AD7BEB6005662E9 /* ContentView.swift */,
-				D6E296E72AD7BFAC005662E9 /* Recibos_Cobrados_View.swift */,
 				D6E296F62AD846BC005662E9 /* Tarjetas */,
 				D6E296EF2AD7D578005662E9 /* Recibos_Cobrados_Row_View.swift */,
 				D6E296E52AD7BF5F005662E9 /* Recibos_Cobrados.swift */,
@@ -94,6 +98,16 @@
 				D6E296F72AD84844005662E9 /* Tarjeta_Nombre_Roja.swift */,
 			);
 			path = Tarjetas;
+			sourceTree = "<group>";
+		};
+		FBA586232AD8C73E00AE0583 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D6E296E72AD7BFAC005662E9 /* Recibos_Cobrados_View.swift */,
+				FBA586212AD8C72400AE0583 /* Recibos_Pendientes_View.swift */,
+				FBF749BF2AD8D74800644F5A /* Recibos_No_Cobrados_View.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,10 +181,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6E296EC2AD7D4A0005662E9 /* Recibos_Cobrados_Data.swift in Sources */,
+				FBA586222AD8C72400AE0583 /* Recibos_Pendientes_View.swift in Sources */,
 				D6E296E62AD7BF5F005662E9 /* Recibos_Cobrados.swift in Sources */,
 				D6E296DA2AD7BEB6005662E9 /* ContentView.swift in Sources */,
 				D6E296F02AD7D578005662E9 /* Recibos_Cobrados_Row_View.swift in Sources */,
 				D6E296D82AD7BEB6005662E9 /* reto_noEntregadosApp.swift in Sources */,
+				FBF749C02AD8D74800644F5A /* Recibos_No_Cobrados_View.swift in Sources */,
 				D6E296E82AD7BFAC005662E9 /* Recibos_Cobrados_View.swift in Sources */,
 				D6E296F42AD8458D005662E9 /* Tarjeta_Nombre_Verde.swift in Sources */,
 				D6E296F82AD84844005662E9 /* Tarjeta_Nombre_Roja.swift in Sources */,
